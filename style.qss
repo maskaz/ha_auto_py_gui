@@ -37,7 +37,7 @@ text-align:left;
 QPushButton#switch_button {
     border: 0px solid #96d7eb; /* usuń obramowanie, jeśli chcesz */
   border-radius: 0px;
-  padding: 18px 16px;
+  padding: 10px 16px;
     background-color: rgb(57, 57, 57);
   font-size: 14px;
 color: white;
@@ -45,7 +45,7 @@ color: white;
 QPushButton:pressed#switch_button {
     border: 1px solid white; /* usuń obramowanie, jeśli chcesz */
   border-radius: 0px;
-  padding: 18px 16px;
+  padding: 10px 16px;
     background-color: rgb(17, 17, 17);
   font-size: 14px;
 color: white;
