@@ -11,18 +11,32 @@ from PyQt5.QtCore import QTimer, Qt
 from PyQt5.QtGui import QFont
 import pyqtgraph as pg
 
+def get_config_path():
+    """Zwraca ścieżkę do config.ini – obok pliku exe lub skryptu."""
+    if getattr(sys, 'frozen', False):
+        # Aplikacja spakowana (.exe)
+        base_path = os.path.dirname(sys.executable)
+    else:
+        # Skrypt .py
+        base_path = os.path.dirname(os.path.abspath(__file__))
+
+    return os.path.join(base_path, "config.ini")
+
+# Wczytywanie pliku konfiguracyjnego
+config_path = get_config_path()
 config_object = ConfigParser()
-
-config_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "config.ini")
 config_object.read(config_path)
 
-config_object.read(config_path)
+if "ha" not in config_object:
+    print("Brak sekcji [ha] w pliku config.ini!")
+    sys.exit(1)
+
 config = config_object["ha"]
 
 
 HA_TOKEN = config["ha_token"]
 HA_URL = config["ha_ip"]
-
+screen_settings = config["screen"]
 
 def load_stylesheet(path):
     with open(path, "r") as file:
@@ -122,10 +136,14 @@ def get_sensor_history(sensor_id):
 class SensorChartWindow(QMainWindow):
     def __init__(self, sensor_id):
         super().__init__()
+        global screen_settings
         self.setWindowTitle(f"Wykres: {sensor_id}")
         self.resize(1000, 600)
-        self.setWindowFlag(Qt.FramelessWindowHint)
-        self.showFullScreen()
+        if ( screen_settings == "full"):
+            self.setWindowFlag(Qt.FramelessWindowHint)
+            self.showFullScreen()
+        else:
+           print("no full screen")
         main_widget = QWidget()
         self.setCentralWidget(main_widget)
         layout = QVBoxLayout(main_widget)

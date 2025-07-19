@@ -3,6 +3,7 @@ import json
 import threading
 import websocket
 import os
+import os.path
 from PyQt5.QtCore import QTimer, Qt
 from PyQt5.QtWidgets import (
     QApplication, QMainWindow, QWidget, QLabel, QVBoxLayout,
@@ -12,18 +13,32 @@ from configparser import ConfigParser
 from sensor_graph import show_sensor_graph  
 
 
+def get_config_path():
+    """Zwraca ścieżkę do config.ini – obok pliku exe lub skryptu."""
+    if getattr(sys, 'frozen', False):
+        # Aplikacja spakowana (.exe)
+        base_path = os.path.dirname(sys.executable)
+    else:
+        # Skrypt .py
+        base_path = os.path.dirname(os.path.abspath(__file__))
+
+    return os.path.join(base_path, "config.ini")
+
+# Wczytywanie pliku konfiguracyjnego
+config_path = get_config_path()
 config_object = ConfigParser()
-
-config_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "config.ini")
 config_object.read(config_path)
 
-config_object.read(config_path)
+if "ha" not in config_object:
+    print("Brak sekcji [ha] w pliku config.ini!")
+    sys.exit(1)
+
 config = config_object["ha"]
 
 
 HA_TOKEN = config["ha_token"]
 HA_WS_URL = config["ha_ip_ws"]
-
+screen_settings = config["screen"]
 
 def load_entity_groups_from_file():
     try:
@@ -158,10 +173,14 @@ class HAWebSocketClient:
 class HAControlUI(QMainWindow):
     def __init__(self):
         super().__init__()
+        global screen_settings
         self.setWindowTitle("Sterowanie HA")
         self.setGeometry(100, 100, 600, 800)
-    #    self.setWindowFlag(Qt.FramelessWindowHint)
-    #    self.showFullScreen()
+        if ( screen_settings == "full"):
+            self.setWindowFlag(Qt.FramelessWindowHint)
+            self.showFullScreen()
+        else:
+           print("no full screen")
         self.stylesheet = load_stylesheet("style.qss")
         app.setStyleSheet(self.stylesheet)
 
