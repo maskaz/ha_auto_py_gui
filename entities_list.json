@@ -1,0 +1,61 @@
+{
+  "Przedpokoj": [
+    {"entity_id": "light.z2m_przedpokoj_gora_tradfri", "name": "Przedpokoj", "widget_type": "light", "info_type": "light"},
+    {"entity_id": "light.przedpokoj_szafa", "name": "Szafa", "widget_type": "light",  "info_type": "light"},
+    {"entity_id": "light.halldisplay", "name": "Wyswietlacz", "widget_type": "light",  "info_type": "light"},
+    {"entity_id": "sensor.moc_licznik_pradu", "name": "Moc pobor (W)", "widget_type": "sensor_chart",  "info_type": "generic"},
+    {"entity_id": "sensor.ciepla", "name": "Ciepla woda (m³)", "widget_type": "sensor_chart", "info_type": "generic"},
+    {"entity_id": "sensor.zimna", "name": "Zimna woda (m³)", "widget_type": "sensor_chart",  "info_type": "generic"},
+    {"entity_id": "binary_sensor.obecnosc_target", "name": "Lazienka", "widget_type": "sensor",  "info_type": "presence"},
+    {"entity_id": "binary_sensor.zamek_drzwi", "name": "Drzwi", "widget_type": "sensor_chart",  "info_type": "doors"},
+    {"entity_id": "binary_sensor.dzwonek", "name": "Dzwonek", "widget_type": "sensor",  "info_type": "binary"},
+    {"entity_id": "sensor.stan_domofonu", "name": "Domofon", "widget_type": "sensor",  "info_type": "generic"},
+    {"entity_id": "sensor.zmywarka_czas_do_konca", "name": "Zmywarka", "widget_type": "sensor",  "info_type": "generic"},
+    {"entity_id": "sensor.zmywarka_do_naczyn_program_progress", "name": "Postep", "widget_type": "sensor",  "info_type": "generic"}
+  ],
+  "Salon": [
+    {"entity_id": "light.z2m_salon_hue", "name": "Hue", "widget_type": "light",  "info_type": "temp_color"},
+    {"entity_id": "light.z2m_zarowka_1", "name": "Lampa", "widget_type": "light",  "info_type": "light"},
+    {"entity_id": "light.z2m_ledy_pod_parapetem", "name": "Zaslony", "widget_type": "light",  "info_type": "light"},
+    {"entity_id": "light.salon_wszystkie_swiatla", "name": "Wszystkie swiatla", "widget_type": "light",  "info_type": "temp"},
+    {"entity_id": "switch.z2m_salon_swiatlo_gorne", "name": "Gorne", "widget_type": "switch",  "info_type": "switch"},
+    {"entity_id": "sensor.esphome_5_temp", "name": "Temperatura", "widget_type": "sensor_chart",  "info_type": "temperature"},
+    {"entity_id": "sensor.esphome_5_hum", "name": "Wilgotnosc", "widget_type": "sensor_chart",  "info_type": "humadity"},
+    {"entity_id": "binary_sensor.z2m_salon_czujnik_okna_contact", "name": "Okno", "widget_type": "sensor_chart",  "info_type": "window"},
+    {"entity_id": "sensor.z2m_obecnosc_swiatlo_salon_illuminance", "name": "Jasnosc", "widget_type": "sensor_chart",  "info_type": "generic"},
+    {"entity_id": "cover.zaslony_krokowy", "name": "Zaslony", "widget_type": "cover",  "info_type": "cover"}
+  ],
+  "Sypialnia": [
+    {"entity_id": "light.z2m_grupa_ikea_ledy_sypialnia", "name": "Ledy", "widget_type": "light",  "info_type": "temp_color"},
+    {"entity_id": "switch.z2m_sypialnia_swiatlo_gorne", "name": "Gorne", "widget_type": "switch",  "info_type": "switch"},
+    {"entity_id": "sensor.ens160warm_temperatura", "name": "Temperatura", "widget_type": "sensor_chart",  "info_type": "temperature"},
+    {"entity_id": "sensor.ens160warm_wilgotnosc", "name": "Wilgotnosc", "widget_type": "sensor_chart",  "info_type": "humadity"},
+    {"entity_id": "sensor.ens160_air_quality_rating_2", "name": "Jakosc powietrza", "widget_type": "sensor_chart",  "info_type": "generic"},
+    {"entity_id": "sensor.ens160warm_eco2", "name": "Co2", "widget_type": "sensor_chart",  "info_type": "generic"},
+    {"entity_id": "sensor.ens160warm_pyl", "name": "Pyl", "widget_type": "sensor_chart",  "info_type": "generic"},
+    {"entity_id": "sensor.ens160warm_voc", "name": "Z. Organiczne", "widget_type": "sensor_chart",  "info_type": "generic"},
+    {"entity_id": "sensor.ens160warm_jasnosc", "name": "Jasnosc", "widget_type": "sensor_chart",  "info_type": "generic"},
+    {"entity_id": "binary_sensor.z2m_sypialnia_czujnik_okna_2_contact", "name": "Okno Lewe", "widget_type": "sensor_chart",  "info_type": "window"},
+    {"entity_id": "binary_sensor.z2m_sypialnia_czujnik_okna_contact", "name": "Okno Prawe", "widget_type": "sensor_chart",  "info_type": "window"}
+    
+  ],
+  "Frankowy": [
+    {"entity_id": "light.z2m_ledy_ikea", "name": "Ledy", "widget_type": "light",  "info_type": "temp_color"},
+    {"entity_id": "light.z2m_lampa_frankowy", "name": "Lampa", "widget_type": "light",  "info_type": "temp"},
+    {"entity_id": "switch.z2m_frankowy_gora", "name": "Gorne", "widget_type": "switch",  "info_type": "switch"},
+    {"entity_id": "sensor.2sensory_temperatura", "name": "Temperatura", "widget_type": "sensor_chart",  "info_type": "temperature"},
+    {"entity_id": "sensor.2sensory_wilgotnosc", "name": "Wilgotnosc", "widget_type": "sensor_chart",  "info_type": "humadity"},
+    {"entity_id": "sensor.2sensory_ens160_air_quality_rating", "name": "Jakosc powietrza", "widget_type": "sensor_chart",  "info_type": "generic"},
+    {"entity_id": "sensor.2sensory_eco2", "name": "Co2", "widget_type": "sensor_chart",  "info_type": "generic"},
+    {"entity_id": "sensor.2sensor_pyl", "name": "Pyl", "widget_type": "sensor_chart",  "info_type": "generic"},
+    {"entity_id": "sensor.2sensory_voc", "name": "Z. Organiczne", "widget_type": "sensor_chart",  "info_type": "generic"},
+    {"entity_id": "sensor.2sensor_jasnosc", "name": "Jasnosc", "widget_type": "sensor_chart",  "info_type": "generic"},
+    {"entity_id": "binary_sensor.z2m_frankowy_okno_contact", "name": "Okno", "widget_type": "sensor_chart",  "info_type": "window"}
+  ],
+  "Urzadzenia": [
+    {"entity_id": "number.predkosc_4", "name": "Oczyszczacz", "widget_type": "number",  "info_type": "fan"},
+    {"entity_id": "fan.megawentylator", "name": "Went. Sufitowy", "widget_type": "fan",  "info_type": "fan"},
+    {"entity_id": "light.bamboo", "name": "Bamboo", "widget_type": "light",  "info_type": "audio"},
+    {"entity_id": "select.bamboo_zrodlo", "name": "Bamboo zrodlo", "widget_type": "select", "info_type": "list" }
+  ]
+}
