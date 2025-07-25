@@ -71,7 +71,7 @@ widget_type: <br/>
     info_type: <br/>
       switch <br/>
       
-widget_type:
+widget_type: <br/>
   number = for all entieties controled by numbers <br/>
     info_type: <br/>
       fan = for fan icon <br/>
