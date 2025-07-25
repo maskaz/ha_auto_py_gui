@@ -13,6 +13,7 @@ Install necessary packages:
 #sudo apt install python3-pyqtgraph
 #sudo apt install python3-websocket
 #sudo apt install python3-numpy
+#pip install pyqt-advanced-slider
 
 Pyqt5 can be installed via apt, and venv can use system libs:
 
