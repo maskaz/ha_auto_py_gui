@@ -48,7 +48,7 @@ Info about entietes:
 {"entity_id": "light.z2m_przedpokoj_gora_tradfri", "name": "Przedpokoj", "widget_type": "light", "info_type": "light"},
 
 entity_id = entity_id
-name = your name
+name = your name 
 widget_type:
   light = created for dimming lights (with temperature control or hue or both options)
     info_type:
