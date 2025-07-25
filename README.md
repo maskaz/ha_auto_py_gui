@@ -49,6 +49,8 @@ Info about entietes: <br/>
 
 entity_id = entity_id <br/>
 name = your name  <br/>
+
+
 widget_type: <br/>
   light = created for dimming lights (with temperature control or hue or both options) <br/>
     info_type: <br/>
@@ -56,39 +58,39 @@ widget_type: <br/>
       temp_color = for lights with temperatur and color controls <br/>
       temp = for lights only with temperature control <br/>
 
-widget_type:
-  sensor_chart = created for sensors, will create button with sensor state for open graph 
-  sensor= created for sensors, if graph is not needed
-    info_type:
-      window = for windows open/close sensors 
-      doors = for doors open/close sensors
-      temperature
-      humadity
-      binary = for different binary types
-      generic = for all diffrent ones
+widget_type:  <br/>
+  sensor_chart = created for sensors, will create button with sensor state for open graph  <br/>
+  sensor= created for sensors, if graph is not needed <br/>
+    info_type: <br/>
+      window = for windows open/close sensors  <br/>
+      doors = for doors open/close sensors <br/>
+      temperature <br/>
+      humadity <br/>
+      binary = for different binary types <br/>
+      generic = for all diffrent ones <br/>
+      
+widget_type: <br/>
+  switch = for oridnary switches on/off <br/>
+    info_type: <br/>
+      switch <br/>
       
 widget_type:
-  switch = for oridnary switches on/off
-    info_type:
-      switch
-      
-widget_type:
-  number = for all entieties controled by numbers
-    info_type:
-      fan = for fan icon
-      any other, no difference
+  number = for all entieties controled by numbers <br/>
+    info_type: <br/>
+      fan = for fan icon <br/>
+      any other, no difference <br/>
 
-widget_type:
-  fan = for fan entieties
-    info_type:
-      fan = for fan icon
-      any other, no difference
+widget_type: <br/>
+  fan = for fan entieties <br/>
+    info_type: <br/>
+      fan = for fan icon <br/>
+      any other, no difference <br/>
       
-widget_type:      
-      select = for select entieties
-    info_type:
-      list = for list icon
-      any other, no difference  
+widget_type:       <br/>
+      select = for select entieties <br/>
+    info_type: <br/>
+      list = for list icon <br/>
+      any other, no difference  <br/> 
   
       
       
