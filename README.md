@@ -36,7 +36,7 @@ config.ini
 ha_token = long live token  <br/>
 ha_ip = change ip <br/>
 ha_ip_ws = change ip <br/>
-screen = no - can be "full" or "no" <br/>
+screen = can be "full" or "no" <br/>
 
 entities_list.json 
 ---------------------------------------------
