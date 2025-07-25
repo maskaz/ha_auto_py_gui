@@ -38,7 +38,7 @@ Go to folder with a script and edit files:
 
 config.ini
 
-ha_token = long live token
+ha_token = long live token  <br/>
 ha_ip = change ip
 ha_ip_ws = change ip
 screen = no - can be "full" or "no"
