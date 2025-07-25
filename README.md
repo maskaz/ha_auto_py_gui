@@ -39,22 +39,22 @@ Go to folder with a script and edit files:
 config.ini
 
 ha_token = long live token  <br/>
-ha_ip = change ip
-ha_ip_ws = change ip
-screen = no - can be "full" or "no"
+ha_ip = change ip <br/>
+ha_ip_ws = change ip <br/>
+screen = no - can be "full" or "no" <br/>
 
-entities_list.json contains list of "zones" and entities attached do this zones
-Info about entietes:
+entities_list.json contains list of "zones" and entities attached do this zones <br/>
+Info about entietes: <br/>
 {"entity_id": "light.z2m_przedpokoj_gora_tradfri", "name": "Przedpokoj", "widget_type": "light", "info_type": "light"},
 
-entity_id = entity_id
-name = your name 
-widget_type:
-  light = created for dimming lights (with temperature control or hue or both options)
-    info_type:
-      light = for only dimming lights
-      temp_color = for lights with temperatur and color controls
-      temp = for lights only with temperature control
+entity_id = entity_id <br/>
+name = your name  <br/>
+widget_type: <br/>
+  light = created for dimming lights (with temperature control or hue or both options) <br/>
+    info_type: <br/>
+      light = for only dimming lights <br/>
+      temp_color = for lights with temperatur and color controls <br/>
+      temp = for lights only with temperature control <br/>
 
 widget_type:
   sensor_chart = created for sensors, will create button with sensor state for open graph 
