@@ -79,4 +79,4 @@ widget_type:
 
 
 Sreenshots:
-![Alt text](ha_auto_py_gui/screenshot_no_full_screen.png/?raw=true "1")
+![Alt text](https://github.com/maskaz/ha_auto_py_gui/blob/main/screenshot_no_full_screen.png?raw=true "1")
