@@ -79,6 +79,19 @@ widget_type: <br/>
       any other, no difference <br/>
 
 
+New Grid branch.
+Entities are arange inside grid with two colums.
+To make it look more "clear", after every widget_type, if another one will be with different type, script will add empty space inside grid.
 
-![Alt text](https://github.com/maskaz/ha_auto_py_gui/blob/main/screenshot_no_full_screen.png?raw=true "1")
-![Alt text](https://github.com/maskaz/ha_auto_py_gui/blob/main/sensor_graph.png?raw=true "1")
+Color and temperature popups were changes, now temperature "colors", and colors are predefinied by default.
+Config.ini file has new additional config line:
+"temp_color_slider"
+If changed to "yes" popups will back to one with sliders.
+
+
+
+
+
+![Alt text](https://github.com/maskaz/ha_auto_py_gui/blob/Grid/main_window.png?raw=true "1")
+![Alt text](https://github.com/maskaz/ha_auto_py_gui/blob/Grid/temp.png?raw=true "1")
+![Alt text](https://github.com/maskaz/ha_auto_py_gui/blob/Grid/color_temp.png?raw=true "1")
