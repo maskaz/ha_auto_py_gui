@@ -1,0 +1,281 @@
+QWidget {
+  background-color: #1e1e1e;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+}
+
+QWidget#number {
+  background-color: #272727;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+}
+
+QWidget#spacer {
+  background-color: #191919;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+}
+
+QTabBar::tab {
+    min-width: 120px;    /* minimalna szerokość przycisku zakładki */
+    min-height: 40px;    /* minimalna wysokość przycisku zakładki */
+    padding: 10px 50px 10px 50px ;        /* odstępy wewnętrzne */
+    font-size: 16px;     /* rozmiar czcionki na karcie */
+}
+
+QGroupBox#group_box
+{
+        background-color: #191919;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin-top: 30px;
+        color: grey;
+        font-weight: bold;
+        font-size: 20px;
+        text-align:right;
+}
+
+QGroupBox::title {
+margin-top: -70px;
+background-color: transparent;
+}
+
+
+QLabel#ico {
+font-size: 16px;  
+
+                            color: white;
+                            border-radius: 5px;
+                            background-color: #272727;
+                            font-weight: bold;
+}
+
+QLabel#name {
+font-size: 14px;  
+color: #fcf8f4;  
+background-color: transparent; 
+border-radius: 5px
+
+}
+
+
+QLabel#label {
+    border: 1px solid rgb(17, 17, 17); /* usuń obramowanie, jeśli chcesz */
+  border-radius: 5px;
+  padding: 8px 16px;
+    background-color: transparent;
+  font-size: 14px;
+color: white;
+text-align:right;
+}
+
+QLabel#sensor_label {
+    border: 1px solid grey; /* usuń obramowanie, jeśli chcesz */
+  border-radius: 5px;
+  padding: 8px 16px;
+    background-color: #1e1e1e;
+  font-size: 18px;
+color: white;
+text-align:center;
+}
+
+QLabel#label {
+    border: 1px solid grey; /* usuń obramowanie, jeśli chcesz */
+  border-radius: 5px;
+  padding: 8px 16px;
+    background-color: #1e1e1e;
+  font-size: 18px;
+color: white;
+text-align:right;
+}
+
+QLabel#empty_label {
+    border: 0px solid rgb(17, 17, 17); /* usuń obramowanie, jeśli chcesz */
+  border-radius: 0px;
+  padding: 8px 16px;
+    background-color: transparent;
+  font-size: 14px;
+color: white;
+text-align:left;
+}
+
+
+
+QPushButton#sensor_chart_button {
+    border: 1px solid grey; /* usuń obramowanie, jeśli chcesz */
+  border-radius: 5px;
+  padding: 8px 16px;
+    background-color: #1e1e1e;
+  font-size: 18px;
+color: white;
+text-align:right;
+}
+QPushButton:pressed#sensor_chart_button {
+    border: 1px solid white; /* usuń obramowanie, jeśli chcesz */
+  border-radius: 5px;
+  padding: 8px 16px;
+    background-color: rgb(17, 17, 17);
+  font-size: 18px;
+color: white;
+text-align:right;
+    }
+
+
+QPushButton#switch_button {
+    border: 1px solid grey; /* usuń obramowanie, jeśli chcesz */
+  border-radius: 5px;
+  padding: 8px 10px;
+    background-color: #1e1e1e;
+  font-size: 18px;
+color: white;
+text-align:center;
+}
+
+QPushButton:pressed#switch_button {
+    border: 1px solid white; /* usuń obramowanie, jeśli chcesz */
+  border-radius: 5px;
+  padding: 8px 10px;
+    background-color: rgb(17, 17, 17);
+  font-size: 18px;
+color: white;
+text-align:center;
+    }
+
+QPushButton#close_button {
+    border: 1px solid grey; /* usuń obramowanie, jeśli chcesz */
+  border-radius: 5px;
+  padding: 8px 10px;
+    background-color: #1e1e1e;
+  font-size: 18px;
+color: white;
+
+}
+
+QPushButton:pressed#close_button {
+    border: 1px solid white; /* usuń obramowanie, jeśli chcesz */
+  border-radius: 5px;
+  padding: 8px 10px;
+    background-color: rgb(17, 17, 17);
+  font-size: 18px;
+color: white;
+    }
+    
+    
+QSlider::groove:horizontal {
+        border: 2px solid;
+border-radius: 5px;
+        height: 32px; 
+        margin: 0px;
+        background-color: rgb(64, 64, 64);
+        }
+        
+        
+ QSlider::handle:horizontal {
+	background-color: #f6825d;
+   border-radius: 5px;
+    border: 0px solid #484848;
+              border-top-color: #484848;
+              border-bottom-color: #484848;
+
+                border-left-color: transparent;
+                border-right-color: #484848;
+    width: 32px;
+margin: 0px 0px 0px 1px;
+
+    }
+
+QSlider::sub-page:horizontal {
+               background-color: #f6825d;
+                border-radius: 5px;
+               border: 0px solid ;
+
+              border-top-color: #484848;
+              border-bottom-color: #484848;
+
+                border-left-color: #484848;
+                border-right-color: #484848;
+height: 36px;
+
+}
+QSlider::add-page:horizontal {
+             background-color: rgb(64, 64, 64);
+                border-radius: 5px;
+               border: 1px solid ;
+
+              border-top-color: #484848;
+              border-bottom-color: #484848;
+
+                border-left-color: #484848;
+                border-right-color: #484848;
+height: 36px;
+
+           }
+
+    
+    
+    
+    
+QScrollBar:vertical
+    {
+        background-color: #1e1e1e;
+        width: 22px;
+
+        border: 0px solid trasparent;
+        border-radius: 5px;
+    }
+QScrollBar::handle:vertical
+    {
+        background-color: #272727;        
+        min-height: 15px;
+        border-radius: 5px;
+    }
+
+QScrollBar::add-line:vertical {
+    background: #1e1e1e;  
+    height: 0px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:vertical {
+    background: #1e1e1e;  
+    height: 0px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}
+
+
+QFrame#widget_frame {
+font-size: 20px;
+                            color: white;
+                            border-radius: 5px;
+                            background-color: #272727;
+
+}
+
+
+QComboBox#select_combo {
+        border: 1px solid gray;
+        border-radius: 5px;
+        padding: 5px;
+        min-width: 100px;
+        font-size: 14px;
+}
+QComboBox::drop-down {
+        subcontrol-origin: padding;
+        subcontrol-position: top right;
+        background-color: transparent;
+        width: 25px;
+        border-left: 1px solid transparent;
+        border-radius: 5px;
+        
+    }
+
+    QComboBox QAbstractItemView {
+        background: #191919;
+        selection-background-color: #1e1e1e;
+        selection-color: white;
+        border: 1px solid gray;
+        outline: 0;
+        border-radius: 5px;
+    }
